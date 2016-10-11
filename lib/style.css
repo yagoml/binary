@@ -9,7 +9,7 @@ input{
 
 body{
     background: black;
-    color: yellow;
+    color: greenyellow;
 }
 
 .table-hover>tbody>tr:hover{

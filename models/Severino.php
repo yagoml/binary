@@ -5,7 +5,7 @@ $GLOBALS['model'] = new Model();
 $severino = new Severino();
 
 if (isset(json_decode(file_get_contents('php://input'), true)['call'])) {
-    $severino->pleaseMakeThatShitWorks();
+    $severino->getRede();
 }
 
 if (isset(json_decode(file_get_contents('php://input'), true)['nome'])) {
@@ -20,7 +20,7 @@ if (isset(json_decode(file_get_contents('php://input'), true)['delete'])) {
 
 class Severino {
 
-    public function pleaseMakeThatShitWorks() {
+    public function getRede() {
         $globalTree = $GLOBALS['model']->getAllMembers();
         foreach ($globalTree as &$memberTree) {
             $tree = [];

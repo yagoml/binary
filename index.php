@@ -25,8 +25,16 @@
                 <form name="newMemberForm">
                     <h4>Cadastro:</h4>
                     <input class="form-control" ng-model="member.nome" placeholder="Nome">
-                    <input class="form-control" ng-model="member.supervisor" placeholder="Supervisor (ID">
-                    <input class="form-control" ng-model="member.lado" placeholder="Lado">
+                    <input class="form-control" ng-model="member.supervisor" placeholder="Supervisor (ID">                    
+                    <h4>Lado:</h4>
+                    <label>
+                        Esquerdo /
+                        <input type="radio" name="lado" value="e" ng-model="member.lado">
+                    </label>
+                    <label>
+                        Direito
+                        <input type="radio" name="lado" value="d" ng-model="member.lado">
+                    </label>
 
                     <button class="btn btn-primary" ng-click="register(member)" ng-disabled="newMemberForm.$invalid">Cadastrar</button>
                 </form>
